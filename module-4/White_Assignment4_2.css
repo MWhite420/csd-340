@@ -27,24 +27,16 @@ h3 {
 
 figure {
     text-align: center;
-    border:1px solid red; 
+    border:2px solid red; 
     
 }
-
-
 
 figcaption {
     font-style: italic;
     font-size: 0.75em;
     color: rgb(255 0 0);
 }
-
-img {
-    text-align: center;
-    max-width: 100%;
-    height: auto;
-}
-
+      
 .footer-div {
     margin-top: 20px;
     text-align: right;
