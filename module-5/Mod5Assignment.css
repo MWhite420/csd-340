@@ -1,0 +1,34 @@
+.container {
+ 	background-color: lavender;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.hero-content {
+	background-color: lavender;
+	font-family: Georgia Serif;
+	border-style: inset;
+	border-color: black;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.story-content {
+	font-family: Georgia Serif;
+	text-align: center;
+}
+ 
+.gallery-grid {
+	text-align: center;
+}
+
+h1 {
+	font-family: Papyrus;
+	
+}
+
+h2 {
+	font-family: Papyrus;
+	text-align: center;
+}
