@@ -2,7 +2,7 @@
 CSD340
 Mod6.2-->
 
-.header {
+header {
 	background-color: #cb4335;
 	padding: 20px;
 }
@@ -11,7 +11,7 @@ header h1 {
 	font-weight:400;
 	text-align: center;
 	color: white;
-	background-color:  #cb4335;
+	background-color: #cb4335;
 }
 
 #navbar {
