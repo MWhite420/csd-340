@@ -86,16 +86,14 @@ header h1 {
 
 
 .footer-div {
-    color: white;
-    background-color: #cb4335;
+    background-color: #333;
+    color: lavender;
     position: fixed;
-    left: 0;
     bottom: 0;
     width: 100%;
-    font-weight: 400;
-    padding: 10px;
     display: flex;
-    justify-content: space-between;     align-items: center;
+    justify-content: flex-end; /* Pushes the link to the right */
+    padding: 10px;
 }
 
 
