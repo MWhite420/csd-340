@@ -1,0 +1,56 @@
+<!--
+Mark White
+CSD340
+Assignment10.3
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<html>
+ <head>
+    <title>CSD-340 Web Development with HTML and CSS</title>
+  <script>
+        function changeImage(smiley) {
+            smiley.dataset.original = smiley.src; // original image
+            smiley.src = "images/smileyFace.jpg"; // new image
+        }
+
+        function restoreImage(smiley) {
+            smiley.src = smiley.dataset.original; // Restore original image
+        }
+    </script>
+    <script>
+        function onClick(sun) {
+            let originalImage = "images/sunsetBW.jpeg";
+            let newImage = "images/sunset.jpeg";
+
+            // Toggle between images
+            if (sun.src.includes(originalImage)) {
+                sun.src = newImage;
+            } else {
+                sun.src = originalImage;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div onmouseover="this.style.color='red';" onmouseout="this.style.color='black';" style="color: black;">
+      Run your mouse over the image to make it change!
+    </div>
+    <img src="images/sadFace.jpg" 
+         onmouseover="changeImage(this)" 
+         onmouseout="restoreImage(this)" 
+         alt="Face Image"
+         width="200">
+
+    <div onmouseover="this.style.color='red';" onmouseout="this.style.color='black';" style="color: black;">
+      Click on the image to bring color!
+    </div>
+    <img src="images/sunsetBW.jpeg" 
+         onclick="onClick(this)" 
+         alt="Sunset Image"
+         width="400"
+	 height="300">
+
+</body>
+</html>
