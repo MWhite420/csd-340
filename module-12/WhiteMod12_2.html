@@ -1,0 +1,85 @@
+<!--
+Mark White
+CSD340
+Assignment12.2 -->
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link href="White_Mod12_2.css" rel="stylesheet" type="text/css" />
+     <script>
+    var books = [
+        "The Great Gatsby",
+        "To Kill a Mockingbird",
+        "The Mouse and the Motorcycle",
+        "Pride and Prejudice",
+        "The Hobbit",
+        "The Catcher in the Rye",
+        "Lord of the Flies",
+        "The Alchemist",
+        "Brave New World",
+        "The Little Prince"
+    ];
+
+    function displayBooks(order) {
+        var bookList = document.getElementById('bookList'); // Get the list element
+        bookList.innerHTML = ""; // Clear existing list
+
+        var sortedBooks;
+        if (order === 'asc') {
+            sortedBooks = books; // Keep the original order
+        } else {
+            sortedBooks = books.slice().reverse(); // Create a copy and reverse it
+        }
+
+        // Loop through books and add to list
+        for (var i = 0; i < sortedBooks.length; i++) {
+            var li = document.createElement('li'); // Create list item
+            li.textContent = sortedBooks[i]; // Set text
+            bookList.appendChild(li); // Add to list
+        }
+    }
+</script>
+
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+        
+        <div class="left-div">
+            <h3><b>Top 10 Favorite Books</b></h3>
+	    <button onclick="displayBooks('asc')">Top to Bottom</button>
+            <button onclick="displayBooks('desc')">Bottom to Top</button>
+	    <hr>	
+            <ol id="bookList">
+                <li>The Great Gatsby</li>
+                <li>To Kill a Mockingbird</li>
+                <li>The Mouse and the Motorcycle</li>
+                <li>Pride and Prejudice</li>
+                <li>The Hobbit</li>
+                <li>The Catcher in the Rye</li>
+                <li>Lord of the Flies</li>
+                <li>The Alchemist</li>
+                <li>Brave New World</li>
+                <li>The Little Prince</li>
+            </ol>
+        </div>
+        
+        <div class="right-div">
+            <h3><b>5 Things I've Learned Since the Course Started</b></h3>
+            <ul>
+                <li>HTML Structure</li>
+                <li>HTML Text and Lists</li>
+                <li>HTML Links and Images</li>
+                <li>Web Development Best Practices</li>
+                <li>CSS Coloring and Styling</li>
+            </ul>
+        </div>
+        
+        <div class="footer-div">
+            <a href="https://mwhite420.github.io/csd-340/">Back to Landing Page</a>
+        </div>
+    </div>
+</body>
+</html>

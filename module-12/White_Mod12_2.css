@@ -1,0 +1,57 @@
+
+/* Mark White
+CSD340
+Assignment 3.3 */
+
+#container {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.left-div, .right-div {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    text-align: left;
+    border: 1px solid red;
+    border-radius: 15px;
+}
+
+.right-div {
+    border: 1px dashed red;
+}
+
+
+h3 {
+    font-style: bold;
+    font-weight: 500;
+}
+
+ol, ul {
+    font-weight: 300;
+    padding: 10px;
+    list-style-position: inside;
+}
+
+
+ul {
+    list-style-type: upper-roman;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footer-div {
+    width: 100%;
+    margin-top: 60%;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.footer-div a {
+    float: right;
+}
